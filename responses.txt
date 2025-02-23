@@ -1,0 +1,54 @@
+When you make an HTTP request using Python (or any other method), the server responds with an **HTTP status code**. You got `<Response [200]>`, which means **the request was successful**.
+
+### **Common HTTP Response Codes**
+Here are some other responses you might get while scraping:
+
+#### ✅ **Success Codes (2xx)**
+- **200 OK** → The request was successful.
+- **201 Created** → A new resource was successfully created (usually in APIs).
+- **204 No Content** → The request was successful, but there's no data to return.
+
+#### 🔀 **Redirection Codes (3xx)**
+- **301 Moved Permanently** → The page has been permanently moved to a new URL.
+- **302 Found (Temporary Redirect)** → The page is temporarily moved.
+- **304 Not Modified** → The resource hasn’t changed since the last request.
+
+#### ❌ **Client Error Codes (4xx)**
+- **400 Bad Request** → The request was malformed.
+- **401 Unauthorized** → Authentication is required.
+- **403 Forbidden** → You **don’t have permission** to access the resource (common in scraping!).
+- **404 Not Found** → The page does not exist.
+- **429 Too Many Requests** → You are sending too many requests; the server is blocking you (rate limiting).
+
+#### 🔥 **Server Error Codes (5xx)**
+- **500 Internal Server Error** → The server crashed while processing your request.
+- **502 Bad Gateway** → The server received an invalid response from another server.
+- **503 Service Unavailable** → The server is overloaded or undergoing maintenance.
+- **504 Gateway Timeout** → The server did not respond in time.
+
+---
+
+### **How to Check Response Codes in Python**
+You can print and handle different response codes in your scraping script like this:
+
+```python
+import requests
+
+url = "https://scrapethissite.com/"
+response = requests.get(url)
+
+print(f"Response Code: {response.status_code}")
+
+if response.status_code == 200:
+    print("Success! The page loaded correctly.")
+elif response.status_code == 403:
+    print("Access forbidden! The website is blocking scrapers.")
+elif response.status_code == 404:
+    print("Page not found!")
+elif response.status_code == 429:
+    print("Too many requests! Slow down.")
+else:
+    print(f"Unexpected error: {response.status_code}")
+```
+
+Would you like help handling errors in your scraper? 🚀

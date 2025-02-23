@@ -1,0 +1,67 @@
+Data Collecting
+As an Indian web scraper, you need to follow multiple laws to ensure your activities are **legal and ethical**. Here’s a detailed list of laws you should adhere to:
+
+---
+
+### **1. Information Technology (IT) Act, 2000 (India)**
+- **Section 43**: Prohibits unauthorized access to computer systems, including scraping behind logins.
+- **Section 66**: Any unauthorized access, hacking, or bypassing security measures (CAPTCHA, login walls) is a punishable offense.
+- **Section 72**: Protects personal data; scraping personal or confidential information without permission can result in legal action.
+
+---
+
+### **2. Personal Data Protection Bill (PDPB) – India**
+- Regulates the collection, processing, and storage of **personal data**.
+- Scraping personal details like names, phone numbers, and email addresses **without user consent** is illegal.
+- **Publicly available data** can be scraped, but repurposing it for commercial use may require compliance.
+
+---
+
+### **3. Copyright Act, 1957 (India)**
+- Protects website content (text, images, and databases).
+- Scraping and republishing copyrighted content without permission can result in copyright infringement.
+- If a website explicitly states **"All rights reserved"**, scraping without permission can be risky.
+
+---
+
+### **4. Terms of Service (ToS) Agreements**
+- Many websites mention in their **Terms of Service (ToS)** whether scraping is allowed or prohibited.
+- Violating ToS may lead to:
+  - **Legal action** (civil lawsuits).
+  - **IP bans** (blocking your access to the website).
+  - **Data removal requests** under copyright or privacy laws.
+
+---
+
+### **5. Competition Act, 2002 (India)**
+- If scraping is done for competitive intelligence (e.g., tracking competitor pricing), it **should not** lead to:
+  - **Market manipulation**
+  - **Data theft**
+  - **Unfair competition practices**
+- Extracting **bulk data** from competitors and using it to gain an unfair advantage may be challenged legally.
+
+---
+
+### **6. General Data Protection Regulation (GDPR) – EU (If Scraping EU Websites)**
+- If you scrape websites operating in the **EU**, GDPR applies.
+- Personal data (email, IP, location) **cannot** be scraped without the user's consent.
+- If you store or process EU user data, you **must comply with GDPR regulations**.
+
+---
+
+### **7. Digital Millennium Copyright Act (DMCA) – USA (If Scraping US Websites)**
+- Protects content under copyright law.
+- Websites can issue a **DMCA takedown notice** if they find their data was scraped illegally.
+- Scraping **openly available, uncopyrighted data** (e.g., stock prices, public records) is usually safe.
+
+---
+
+## ✅ **Best Practices for Legal Web Scraping in India**
+- **Check the website's `robots.txt`** to see if scraping is allowed.
+- **Do not scrape personal data** (names, emails, phone numbers, addresses).
+- **Avoid bypassing security features** (login walls, CAPTCHA).
+- **Limit request frequency** to avoid server overload (use polite scraping techniques).
+- **Respect copyright laws** (do not republish scraped content as your own).
+- **Read and follow the website's Terms of Service** to avoid breaches.
+
+Would you like help implementing a scraper that follows these legal guidelines? 🚀
